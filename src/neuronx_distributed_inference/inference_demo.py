@@ -32,6 +32,7 @@ from neuronx_distributed_inference.models.qwen2.modeling_qwen2 import NeuronQwen
 from neuronx_distributed_inference.models.qwen3.modeling_qwen3 import NeuronQwen3ForCausalLM
 from neuronx_distributed_inference.models.qwen3_moe.modeling_qwen3_moe import NeuronQwen3MoeForCausalLM
 from neuronx_distributed_inference.models.gemma3.modeling_gemma3 import NeuronGemma3ForCausalLM
+from neuronx_distributed_inference.models.grt.modeling_grt import NeuronGRTForCausalLM
 from neuronx_distributed_inference.modules.lora_serving import LoraServingConfig
 from neuronx_distributed_inference.utils.accuracy import (
     check_accuracy,
@@ -60,6 +61,7 @@ MODEL_TYPES = {
     "qwen3": {"causal-lm": NeuronQwen3ForCausalLM},
     "qwen3_moe": {"causal-lm": NeuronQwen3MoeForCausalLM},
     "gemma3": {"causal-lm": NeuronGemma3ForCausalLM},
+    "grt": {"causal-lm": NeuronGRTForCausalLM},
 }
 
 
